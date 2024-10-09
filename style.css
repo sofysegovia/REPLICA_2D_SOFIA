@@ -1,0 +1,25 @@
+
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f8f8f8;
+           margin: 0;
+       }
+       .menu {
+           background-color: #000000; /* Cor Ferrari */
+           padding: 10px;
+           display: flex;
+           justify-content: space-around;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+       }
+       .menu a {
+           color: white;
+           text-decoration: none;
+           padding: 10px 20px;
+           transition: background 0.3s;
+       }
+       .menu a:hover {
+           background: rgba(255, 255, 255, 0.2);
+           border-radius: 5px;
+       }
+   </style>
