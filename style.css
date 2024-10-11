@@ -23,3 +23,8 @@
            border-radius: 5px;
        }
    </style>
+<style>
+        body { font-family: Arial, sans-serif; }
+        .product { border: 1px solid #ccc; margin: 20px; padding: 10px; width: 200px; }
+        img { max-width: 100%; }
+    </style>
