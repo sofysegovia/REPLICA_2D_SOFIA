@@ -1,160 +1,253 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* styles.css */
 
-    <title> ferrari new arrivals</title>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    
-   
-    <link rel="stylesheet" href="style.css"> 
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+}
 
-</head>
-<body>
+/* Barra superior mais fina */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Altura reduzida */
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+}
 
-    
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <a href="#">Customer service</a>
-            <a href="#">Store locator</a>
-        </div>
-        <div>
-            <a href="#">Login</a>
-            <a href="#">Cart</a>
-        </div>
-    </div>
+.top-bar-left {
+    display: flex;
+    gap: 20px;
+}
 
-   
-    <div class="logo-navbar-container">
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        <div class="logo"></div>
 
-      
-        <div class="navbar">
-            <a href="#">NEW IN</a>
-            <a href="#">REPLICA</a>
-            <a href="#">MEN</a>
-            <a href="#">WOMEN</a>
-            <a href="#">KIDS</a>
-            <a href="#">GIFTS</a>
-            <a href="#">EYEWEAR</a>
-            <a href="#">COLLECTIBLES</a>
-            <a href="#">FOCUS ON</a>
-        </div>
-    </div>
+.logo-navbar-container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <div class="content">
-        
-        <div class="breadcrumb">HOME | NEW IN</div>
 
-        
-        <h1>NEW ARRIVALS</h1>
-    </div>
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/3/35/Ferrari_logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -3px;
+}
 
-</body>
-</html>
 
- <div class="spacer"> </div>
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    gap: 30px; /* Espaço entre links */
+    padding: 5px 0; /* Altura menor */
+}
 
- <!-- Grade de Produtos -->
-<div class="product-grid">
-    
-    <!-- Produtos menores -->
-    <div class="product-cards">
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw87955b60/images/zoom/21389f_49_1.jpg?sw=408&sh=523&strip=false" alt="Coat">
-            <p>Coat in virgin wool and cashmere drill fabric</p>
-            <span>€3,200</span>
-        </div>
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw70b7b949/images/zoom/21089f_118_1.jpg?sw=408&sh=523&strip=false" alt="Trousers">
-            <p>Five-pocket trousers in lightweight denim</p>
-            <span>€790</span>
-        </div>
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwb55772bc/images/zoom/21049f_38_1.jpg?sw=408&sh=523&strip=false" alt="Shirt">
-            <p>Alpaca and merinowoolsweater</p>
-            <span>€890</span>
-        </div>
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw28d71018/images/zoom/21447f_01_1.jpg?sw=408&sh=523&strip=false" alt="Dress">
-            <p>Patent leather curled pump shoe</p>
-            <span>€990</span>
-        </div>
-    </div>
+.navbar a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
 
-    <div class="large-product">
-        <img src="https://images.ctfassets.net/p85mj7v2zszd/4rMnhPLnr4oBNSTyaqbdNe/f4ef001355487ea611f2a4964705002b/Middlebanner_verticale-7.jpg?w=1600&h=2460&fm=webp" alt="Large Product" />
-        
-    </div>
-</div>
+.navbar a:hover {
+    color: #ddd;
+}
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Ferrari</title>
+/* Conteúdo principal */
+.content {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 50px; /* Ajuste para manter New Arrivals na posição anterior */
+    padding: 0 30px; /* Espaçamento nas laterais */
+}
 
-    <!-- Fonte Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+/* Novo estilo para a seção "Home | New In" */
+.breadcrumb {
+    font-size: 14px; /* Tamanho da fonte */
+    color: #888; /* Cor cinza */
+    margin-bottom: 10px; /* Menor espaçamento abaixo */
+    text-align: left; /* Alinhamento à esquerda */
+    padding-left: 30px; /* Espaçamento à esquerda */
+    margin-top: 10px; /* Espaço acima */
+}
 
-    <!-- Link para o CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Estilo do título "New Arrivals" */
+.content h1 {
+    font-family: 'typography', sans-serif; /* Fonte da navbar */
+    font-size: 24px; /* Tamanho ajustado */
+    margin-bottom: 10px;
+    font-weight: 700; /* Letras mais grossas */
+    color: black; /* Cor preta */
+}
 
-    <!-- Grade de Produtos -->
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw28d71018/images/zoom/21447f_01_1.jpg?sw=408&sh=523&strip=false" alt="Produto 1">
-            <p>Patent leather curled pump shoe</p>
-            <span>€990</span>
-        </div>
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw4ca6d430/images/zoom/20982f_124_1.jpg?sw=408&sh=523&strip=false" alt="Produto 2">
-            <p>Shearling caban</p>
-            <span>€4.700</span>
-        </div>
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw70271e6d/images/zoom/21821f_101_1.jpg?sw=408&sh=523&strip=false" alt="Produto 3">
-            <p>Chinos in virgin wool and cashmere drill fabric</p>
-            <span>€1.190</span>
-        </div>
-        <div class="product-card">
-            <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw3b407800/images/zoom/21177f_124_1.jpg?sw=408&sh=523&strip=false" alt="Produto 4">
-            <p>Shearling bomber jacket</p>
-            <span>€4.500</span>
-        </div>
-    </div>
+.content p {
+    font-size: 18px;
+    color: #555;
+}
+/* Estilo do container principal que contém filtro e roupas */
+.main-content {
+    display: flex;
+    padding: 20px 30px;
+}
 
-</body>
-</html>
+/* Estilo da seção de filtro */
+.filter-section {
+    width: 20%; /* Ocupa 20% da largura */
+    margin-right: 20px;
+}
 
-<div class="product-grid">
-    <div class="product-card">
-        <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw01e4eecd/images/zoom/21178f_38_1.jpg?sw=408&sh=523&strip=false" alt="Produto 1">
-        <p>Shearling coat</p>
-        <span>€5.900</span>
-    </div>
-    <div class="product-card">
-        <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dwc259d3bf/images/zoom/20984f_38_1.jpg?sw=408&sh=523&strip=false" alt="Produto 2">
-        <p>Shearling jumpsuit</p>
-        <span>€8.900</span>
-    </div>
-    <div class="product-card">
-        <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw9c9b49a5/images/zoom/21304f_01_1.jpg?sw=408&sh=523&strip=false" alt="Produto 3">
-        <p>Sleeveless long dress</p>
-        <span>€1.190</span>
-    </div>
-    <div class="product-card">
-        <img src="https://store.ferrari.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-48/default/dw5fe67b8c/images/zoom/20987f_123_1.jpg?sw=408&sh=523&strip=false" alt="Produto 4">
-        <p>Shearling mini skirt</p>
-        <span>€2.900</span>
-    </div>
-</div>
+.filter-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
 
-</body>
-</html>
+.filter-section ul {
+    list-style: none;
+}
+
+.filter-section ul li {
+    margin: 8px 0;
+}
+
+.filter-section ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+.filter-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste do container principal */
+.main-content {
+    display: flex;
+    align-items: right; /* Alinha os itens ao topo */
+    gap: 30px; /* Espaço entre o filtro e o grid */
+    padding: 40px 30px;
+}
+
+/* Seção de Filtro Menor e Compacto */
+.filter-section {
+    width: 150px; /* Largura reduzida */
+    text-align: left;
+}
+
+.filter-section h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
+}
+/* Espaçador entre New Arrivals e Loja */
+.spacer {
+    height: 60px; /* Ajuste essa altura para aumentar ou diminuir o espaço */
+}
+
+/* Aplicando box-sizing em todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Grade de Produtos */
+.product-grid {
+    display: flex; /* Usando flexbox para alinhar itens */
+    gap: 20px; /* Espaço entre os produtos */
+    padding: 30px;
+}
+
+/* Coluna para produtos menores */
+.product-cards {
+    display: grid; /* Usando grid para organizar os produtos */
+    grid-template-columns: repeat(2, 1fr); /* Dois produtos por linha */
+    gap: 10px; /* Espaço entre produtos menores */
+    width: 50%; /* Ocupa toda a largura disponível */
+}
+
+/* Estilo dos produtos menores */
+.product-card {
+    width: 100%; /* Largura fixa para produtos menores */
+    height: 600px; /* Altura fixa para produtos menores */
+    background-color: rgb(246, 241, 241); /* Cor de fundo */
+    padding: 10px; /* Preenchimento interno */
+    text-align: center; /* Alinhamento do texto */
+    transition: all 0.1s; /* Suavização de transições */
+    border: none; /* Remover borda */
+    box-shadow: none; /* Remover sombra */
+    margin: 0; /* Garantir que não haja margens */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: none; /* Garantir que não tenha sombra ao passar o mouse */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-card span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Imagem grande */
+.large-product {
+    width: 700px; /* Largura fixa para a imagem grande */
+    height: 800px; /* Altura fixa para a imagem grande */
+    text-align: center;
+}
+
+.large-product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.large-product p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.large-product span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-cards {
+        grid-template-columns: 1fr; /* Um produto por linha em telas menores */
+    }
+
