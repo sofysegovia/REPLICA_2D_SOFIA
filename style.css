@@ -12,7 +12,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Barra superior mais fina */
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -76,28 +76,27 @@ body {
 
 /* Conteúdo principal */
 .content {
-    text-align: center; /* Centraliza o conteúdo */
-    margin-top: 50px; /* Ajuste para manter New Arrivals na posição anterior */
-    padding: 0 30px; /* Espaçamento nas laterais */
+    text-align: center; 
+    margin-top: 50px; 
+    padding: 0 30px; 
 }
 
-/* Novo estilo para a seção "Home | New In" */
+
 .breadcrumb {
-    font-size: 14px; /* Tamanho da fonte */
-    color: #888; /* Cor cinza */
-    margin-bottom: 10px; /* Menor espaçamento abaixo */
-    text-align: left; /* Alinhamento à esquerda */
-    padding-left: 30px; /* Espaçamento à esquerda */
-    margin-top: 10px; /* Espaço acima */
+    font-size: 14px; 
+    color: #888; 
+    margin-bottom: 10px; 
+    text-align: left;
+    padding-left: 30px; 
+    margin-top: 10px; 
 }
 
-/* Estilo do título "New Arrivals" */
 .content h1 {
-    font-family: 'typography', sans-serif; /* Fonte da navbar */
-    font-size: 24px; /* Tamanho ajustado */
+    font-family: 'typography', sans-serif;
+    font-size: 24px; 
     margin-bottom: 10px;
-    font-weight: 700; /* Letras mais grossas */
-    color: black; /* Cor preta */
+    font-weight: 700; 
+    color: black; 
 }
 
 .content p {
@@ -110,9 +109,9 @@ body {
     padding: 20px 30px;
 }
 
-/* Estilo da seção de filtro */
+
 .filter-section {
-    width: 20%; /* Ocupa 20% da largura */
+    width: 20%; 
     margin-right: 20px;
 }
 
@@ -144,14 +143,14 @@ body {
 /* Ajuste do container principal */
 .main-content {
     display: flex;
-    align-items: right; /* Alinha os itens ao topo */
-    gap: 30px; /* Espaço entre o filtro e o grid */
+    align-items: right; 
+    gap: 30px; 
     padding: 40px 30px;
 }
 
-/* Seção de Filtro Menor e Compacto */
+
 .filter-section {
-    width: 150px; /* Largura reduzida */
+    width: 150px; 
     text-align: left;
 }
 
@@ -162,47 +161,47 @@ body {
     color: #333;
     text-transform: uppercase;
 }
-/* Espaçador entre New Arrivals e Loja */
+
 .spacer {
-    height: 60px; /* Ajuste essa altura para aumentar ou diminuir o espaço */
+    height: 60px; 
 }
 
-/* Aplicando box-sizing em todos os elementos */
+
 * {
     box-sizing: border-box;
 }
 
 /* Grade de Produtos */
 .product-grid {
-    display: flex; /* Usando flexbox para alinhar itens */
-    gap: 20px; /* Espaço entre os produtos */
+    display: flex; 
+    gap: 20px; 
     padding: 30px;
 }
 
 /* Coluna para produtos menores */
 .product-cards {
-    display: grid; /* Usando grid para organizar os produtos */
-    grid-template-columns: repeat(2, 1fr); /* Dois produtos por linha */
-    gap: 10px; /* Espaço entre produtos menores */
-    width: 50%; /* Ocupa toda a largura disponível */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    width: 50%; 
 }
 
 /* Estilo dos produtos menores */
 .product-card {
-    width: 100%; /* Largura fixa para produtos menores */
-    height: 600px; /* Altura fixa para produtos menores */
+    width: 100%; 
+    height: 600px; 
     background-color: rgb(246, 241, 241); /* Cor de fundo */
-    padding: 10px; /* Preenchimento interno */
+    padding: 10px; 
     text-align: center; /* Alinhamento do texto */
-    transition: all 0.1s; /* Suavização de transições */
-    border: none; /* Remover borda */
-    box-shadow: none; /* Remover sombra */
-    margin: 0; /* Garantir que não haja margens */
+    transition: all 0.1s; 
+    border: none; 
+    box-shadow: none; 
+    margin: 0; 
 }
 
 .product-card:hover {
     transform: scale(1.05);
-    box-shadow: none; /* Garantir que não tenha sombra ao passar o mouse */
+    box-shadow: none; 
 }
 
 .product-card img {
@@ -225,8 +224,8 @@ body {
 
 /* Imagem grande */
 .large-product {
-    width: 700px; /* Largura fixa para a imagem grande */
-    height: 800px; /* Altura fixa para a imagem grande */
+    width: 700px; 
+    height: 800px; 
     text-align: center;
 }
 
@@ -244,10 +243,4 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .product-cards {
-        grid-template-columns: 1fr; /* Um produto por linha em telas menores */
-    }
 
